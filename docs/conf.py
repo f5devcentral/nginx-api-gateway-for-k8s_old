@@ -27,7 +27,7 @@ import custom_roles
 
 
 year = time.strftime("%Y")
-eventname = "Nginx API Gateway for K8S workshop" % (year)
+eventname = "Nginx API Gateway for K8S workshop"
 
 rst_prolog = """
 .. |classname| replace:: %s
