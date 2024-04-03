@@ -1,43 +1,30 @@
-Badass Labs from Badass SA
-##########################
+TechXchange 2024 Lab - NGINX API Gateway for K8S
+################################################
 
 Welcome
 -------
-
-.. warning:: Workshop under construction
 
 Welcome to the |classbold| - |year|
 
 |repoinfo|
 
-This workshop is focused on F5 Distributed Cloud so F5ers, Partners and Customers can understand and learn the F5 XC.
-It covers:
+## Lab Description
 
-* ``(Class 1)`` F5 XC services
-  
-  * Explored security services include but not limited to: WAF, DDoS, Basic API, Bot Protection
-  * Application exposed on internet and protected by F5 XC Global Network (RE only)
-  * Application not exposed on internet and only available in a private zone (VPC, VNET, internal VLAN ...) and protected by F5 XC Global Network (RE + CE)
-  * Application not exposed on internet and protected by F5 XC instance in a private zone (CE only)
+F5 NGINX Plus Ingress Controller as an API Gateway for Kubernetes
 
-* ``(Class 2)`` F5 XC Multi-Cloud Networking 
+Prerequisites:
 
-  * Routing traffic to multiple CE sites ( Onprem and AWS )
-  * Routing internal traffic from AWS to Onprem
-  * API Security for internal traffic
+- Kubernetes concepts: ingress, daemonset, service, etc.
+- API concepts: REST API methods (GET, POST), HTTP headers (Authorization).
 
+This is an intermediate level lab that adds API Gateway functionality to a Kubernetes NGINX Plus Ingress.
 
-* ``(Class 3)`` Virtual K8S 
+- Proxy TLS and route HTTP requests to API services based on host header and path
+- API Schema Enforcement - Use OpenAPI Spec to define your API's schema and enforce the schema with an NGINX App Protect Policy
+- API Authorization - Validate signed JSON Web Tokens for authorization
+- API Rate-limiting - Rate-Limit API endpoints per client session to ensure fair use of the API
 
-* ``(Class 4)`` Advanced API Protection 
-
-  * API Discovery
-  * API Validation
-  * API PII
-
-
-
-
+A big thanks to Tony Marfil for setting up this lab!
 
 .. toctree::
    :maxdepth: 2
