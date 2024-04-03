@@ -1,5 +1,5 @@
-Class 11 - F5 NGINX Plus Ingress Controller as an API Gateway for Kubernetes
-============================================================================
+Class 1 - F5 NGINX Plus Ingress Controller as an API Gateway for Kubernetes
+===========================================================================
 
 Prerequisites:
 
